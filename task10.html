@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark text-white">
+
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../task1.html" alt="">DOM task1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../task2.html">DOM task2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../task3.html">DOM task3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../task4.html">DOM task4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="../task5.html">DOM task5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../task6.html">DOM task6</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../task7.html">DOM task7</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../task8.html">DOM task8</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="../task9.html">DOM task9</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="../task10.html">DOM task10</a>
+              </li>
+          </ul>
+        </div>
+
+      </nav>
+      <h1 class="h1">// 10) Input (Type number) ve box (div 10px kvadrat) elave edin. Inputun icerisine reqem yazdiginiz qeder olculer boyusun ve ya kicilsin.
+        // Meselen 10px dir inputa 100yazdim olcusu 110px kvadrat olsun 
+        </h1> 
+
+        <div class="ms-5 mb-3" id="box10" style="width: 10px; height: 10px; border: 1px solid black;background-color: red"></div>
+        <input class="ms-5" type="number" id="input" oninput="resizeBox()"  />
+        
+        <script>
+        function resizeBox() {
+          const inputValue = document.getElementById("input").value;
+          const box10 = document.getElementById("box10");
+          box10.style.width = `${inputValue}px`;
+          box10.style.height = `${inputValue}px`;
+        }
+        </script>
+        
+</body>
+</html>
